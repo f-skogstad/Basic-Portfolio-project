@@ -222,7 +222,7 @@ main {
     width: 100%;
     border: 1px solid black;
     padding: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-size: 18px;
     font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
@@ -264,10 +264,12 @@ main {
     main .contact-form-wrapper {
       text-align: center; }
       main .contact-form-wrapper .contact-form {
-        display: inline-block; }
+        display: inline-block;
+        padding: 0 1rem 0 1rem; }
         main .contact-form-wrapper .contact-form input,
         main .contact-form-wrapper .contact-form textarea {
-          margin-bottom: 0rem; } }
+          margin-bottom: 0rem;
+          padding: 0.5rem; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -281,10 +283,12 @@ main {
       text-align: center; }
       main .contact-form-wrapper .contact-form {
         display: inline-block;
-        width: 100%; }
+        width: 100%;
+        padding: 0 1rem 0 1rem; }
         main .contact-form-wrapper .contact-form input,
         main .contact-form-wrapper .contact-form textarea {
-          margin-bottom: 0rem; }
+          margin-bottom: 0rem;
+          padding: 0.5rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -326,9 +330,11 @@ main {
       text-align: center; }
       main .contact-form-wrapper .contact-form {
         display: inline-block;
-        width: 100%; }
+        width: 100%;
+        padding: 0 1rem 0 1rem; }
         main .contact-form-wrapper .contact-form input,
         main .contact-form-wrapper .contact-form textarea {
-          margin-bottom: 0rem; }
+          margin-bottom: 0rem;
+          padding: 0.5rem; }
     main .projects {
       grid-template-columns: 1fr; } }
