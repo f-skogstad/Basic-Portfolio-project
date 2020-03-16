@@ -58,7 +58,7 @@
         <form class="contact-form" action="contactform.php" method="post">
           <h2>
             Send me an
-            <span class="text-secondary">E-mail!</span>
+            <span class="text-secondary">E-mail</span>
           </h2>
           <p>
             <label>First Name</label>
