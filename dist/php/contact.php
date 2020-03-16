@@ -57,8 +57,8 @@
       <div class="contact-form-wrapper">
         <form class="contact-form" action="contactform.php" method="post">
           <h2>
-            Email
-            <span class="text-secondary">Me</span>
+            Send me an
+            <span class="text-secondary">E-mail!</span>
           </h2>
           <p>
             <label>First Name</label>
