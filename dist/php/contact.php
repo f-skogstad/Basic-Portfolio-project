@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://kit.fontawesome.com/8159a6c191.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
   <title>Contact Me</title>
 </head>
 
@@ -25,22 +25,22 @@
       </div>
       <ul class="menu-nav">
         <li class="nav-item">
-          <a href="index.html" class="nav-link">
+          <a href="../index.html" class="nav-link">
             Home
           </a>
         </li>
         <li class="nav-item">
-          <a href="about.html" class="nav-link">
+          <a href="../about.html" class="nav-link">
             About Me
           </a>
         </li>
         <li class="nav-item">
-          <a href="work.html" class="nav-link">
+          <a href="../work.html" class="nav-link">
             My Work
           </a>
         </li>
         <li class="nav-item current">
-          <a href="contact.html" class="nav-link">
+          <a href="../contact.php" class="nav-link">
             Contact Me
           </a>
         </li>
@@ -53,9 +53,9 @@
       Contact
       <span class="text-secondary">Me</span>
     </h1>
-    <h2 class="sm-heading">This is how you can reach me! (Contact form is currently not working...)</h2>
+    <h2 class="sm-heading">This is how you can reach me!</h2>
       <div class="contact-form-wrapper">
-        <form class="contact-form">
+        <form class="contact-form" action="contactform.php" method="post">
           <h2>
             Email
             <span class="text-secondary">Me</span>
@@ -74,10 +74,10 @@
           </p>
           <p>
             <label>Message</label>
-            <textarea name="message" rows="8"></textarea>
+            <textarea name="message" rows="5"></textarea>
           </p>
           <p class="submit">
-            <button>Submit</button>
+            <button type="submit" name="submit">Submit</button>
           </p>
         </form>
       </div>
@@ -87,7 +87,7 @@
     Copyright &copy; 2020
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>
