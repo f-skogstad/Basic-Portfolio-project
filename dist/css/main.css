@@ -18,13 +18,12 @@
     .menu-btn.close .btn-line:nth-child(2) {
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -6px); }
+      transform: rotate(-45deg) translate(6.5px, -6.5px); }
 
 .menu {
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -40,14 +39,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: rgba(55, 55, 55, 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.3s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: rgba(68, 68, 68, 0.9);
     transform: translate3d(0, 100%, 0);
     transition: all 0.3s ease-out; }
     .menu-branding.show {
@@ -102,8 +101,8 @@ body {
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
-    background-attachment: fixed;
-    background-size: cover; }
+    background-size: cover;
+    background-attachment: fixed; }
     body#bg-img:after {
       content: '';
       position: absolute;
@@ -150,9 +149,10 @@ main {
     main .icons a {
       padding: 0.4rem;
       transition: all 0.3s ease-out; }
-      main .icons a:hover {
+      main .icons a:hover, main .icons a:focus {
         color: #007fff; }
   main#home {
+    position: fixed;
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
@@ -190,7 +190,7 @@ main {
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
-    .projects img:hover {
+    .projects img:hover, .projects img:focus {
       opacity: 0.5;
       border-color: #007fff;
       transition: all 0.3s ease-out; }
@@ -209,22 +209,25 @@ main {
       display: inline-block;
       font-size: larger;
       width: 60%;
-      border: 0;
-      text-transform: uppercase;
       padding: 1rem;
-      outline: 0; }
-      .contact-form .submit button:hover {
+      outline: 0;
+      border-radius: 10px;
+      background-color: #fff;
+      border: 1px solid black;
+      text-transform: uppercase; }
+      .contact-form .submit button:hover, .contact-form .submit button:focus {
         background: #373737;
         color: #007fff;
         transition: all 0.3s ease-out; }
   .contact-form input,
   .contact-form textarea {
     width: 100%;
-    border: 1px solid black;
     padding: 0.5rem;
     margin-bottom: 2rem;
     font-size: 18px;
     font-weight: 400;
+    border-radius: 10px;
+    border: 1px solid black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
 .btn, .btn-dark, .btn-light {
@@ -232,7 +235,7 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
+  .btn:hover, .btn-dark:hover, .btn-light:hover, .btn:focus, .btn-dark:focus, .btn-light:focus {
     background: #007fff;
     color: #000; }
 
