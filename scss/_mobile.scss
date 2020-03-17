@@ -7,13 +7,13 @@
 
 // Desktops & Laptops
 @include mediaLg {
-  .projects {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   main {
     align-items: center;
     text-align: center;
+
+    .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
     .contact-form-wrapper {
       text-align: center;
@@ -42,22 +42,6 @@
       margin-bottom: 1rem;
       font-size: 4rem;
     }
-
-    .contact-form-wrapper {
-      text-align: center;
-
-      .contact-form {
-        display: inline-block;
-        width: 100%;
-        padding: 0 1rem 0 1rem;
-
-        input,
-        textarea {
-          margin-bottom: 0rem;
-        }
-      }
-    }
-
   }
 
   ul.menu-nav,
@@ -102,30 +86,9 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
-}
 
-// Smartphones
-@include mediaSm {
-  main {
-    align-items: center;
+  .contact-form-wrapper {
     text-align: center;
-    padding: 3rem;
-
-    #home h1 {
-      margin-top: 10vh;
-    }
-
-    .lg-heading {
-      margin-top: 1rem;
-      font-size: 3rem;
-    }
-
-    .sm-heading {
-      font-size: 1rem;
-    }
-
-    .contact-form-wrapper {
-      text-align: center;
 
     .contact-form {
       display: inline-block;
@@ -138,9 +101,54 @@
       }
     }
   }
-
-  .projects {
-    grid-template-columns: 1fr;
-  }
 }
+
+// Smartphones
+@include mediaSm {
+  .menu-btn {
+    top: 15px;
+    right: 15px;
+  }
+
+  main {
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+
+    #home h1 {
+      margin-top: 5vh;
+    }
+
+    .lg-heading {
+      margin-top: 0rem;
+      font-size: 3rem;
+    }
+
+    .sm-heading {
+      font-size: 1rem;
+    }
+
+    .bio>p {
+      font-size: 1rem;
+    }
+
+    .projects {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-form-wrapper {
+      text-align: center;
+
+      .contact-form {
+        display: inline-block;
+        width: 100%;
+        padding: 0 1rem 0 1rem;
+
+        input,
+        textarea {
+          margin-bottom: 0rem;
+        }
+      }
+    }
+  }
 }

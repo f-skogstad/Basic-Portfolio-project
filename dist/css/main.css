@@ -259,11 +259,11 @@ main {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
-  .projects {
-    grid-template-columns: repeat(3, 1fr); }
   main {
     align-items: center;
     text-align: center; }
+    main .projects {
+      grid-template-columns: repeat(3, 1fr); }
     main .contact-form-wrapper {
       text-align: center; }
       main .contact-form-wrapper .contact-form {
@@ -281,15 +281,6 @@ main {
       line-height: 1;
       margin-bottom: 1rem;
       font-size: 4rem; }
-    main .contact-form-wrapper {
-      text-align: center; }
-      main .contact-form-wrapper .contact-form {
-        display: inline-block;
-        width: 100%;
-        padding: 0 1rem 0 1rem; }
-        main .contact-form-wrapper .contact-form input,
-        main .contact-form-wrapper .contact-form textarea {
-          margin-bottom: 0rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -313,20 +304,36 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .contact-form-wrapper {
+    text-align: center; }
+    .contact-form-wrapper .contact-form {
+      display: inline-block;
+      width: 100%;
+      padding: 0 1rem 0 1rem; }
+      .contact-form-wrapper .contact-form input,
+      .contact-form-wrapper .contact-form textarea {
+        margin-bottom: 0rem; } }
 
 @media screen and (max-width: 500px) {
+  .menu-btn {
+    top: 15px;
+    right: 15px; }
   main {
     align-items: center;
     text-align: center;
     padding: 3rem; }
     main #home h1 {
-      margin-top: 10vh; }
+      margin-top: 5vh; }
     main .lg-heading {
-      margin-top: 1rem;
+      margin-top: 0rem;
       font-size: 3rem; }
     main .sm-heading {
       font-size: 1rem; }
+    main .bio > p {
+      font-size: 1rem; }
+    main .projects {
+      grid-template-columns: 1fr; }
     main .contact-form-wrapper {
       text-align: center; }
       main .contact-form-wrapper .contact-form {
@@ -335,6 +342,4 @@ main {
         padding: 0 1rem 0 1rem; }
         main .contact-form-wrapper .contact-form input,
         main .contact-form-wrapper .contact-form textarea {
-          margin-bottom: 0rem; }
-    main .projects {
-      grid-template-columns: 1fr; } }
+          margin-bottom: 0rem; } }
