@@ -1,2 +1,2 @@
 # My-Portfolio
-My personal portfolio website inspired to Brad Traversy
+Portfolio website template inspired by Brad Traversy
